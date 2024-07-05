@@ -4,7 +4,7 @@
 其中 ag1->core->ag2 為 bottleneck。    
   
 額外在 ag1->core->ag2 加上一個 wireless link(只有這個 link 是 wireless), 並給定其 bandwidth,  
-模擬整個 topo 的 bandwidth(接收端每秒接收的 data)。  
+模擬整個 topo 的 bandwidth(即接收端每秒接收的 data)。  
   
 需用 ns3 或 mininet-wifi 之類的網路軟體進行模擬,  
 需讓我能使用並確認正確性(topo 是否建立正確, 是否同時模擬 wired 與 wireless)
