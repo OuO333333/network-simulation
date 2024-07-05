@@ -1,10 +1,9 @@
 # network-simulation
 給定一個 simple tree 的 topo 與其 bandwidth,  
 給定傳輸封包的起始點(h1, h3), 終點(h5, h7), 所有節點間皆是有線傳輸,  
-其中 ag1->core->ag2 為 bottleneck,  
-模擬整個 wired-topo 的 bandwidth(接收端每秒接收的 data)。    
+其中 ag1->core->ag2 為 bottleneck。    
   
-在 ag1->core->ag2 加上一個 wireless link, 並給定其 bandwidth,  
+額外在 ag1->core->ag2 加上一個 wireless link(只有這個 link 是 wireless), 並給定其 bandwidth,  
 模擬整個 topo 的 bandwidth(接收端每秒接收的 data)。  
   
 需用 ns3 或 mininet-wifi 之類的網路軟體進行模擬,  
