@@ -1,6 +1,8 @@
 # network-simulation
 給定一個 simple tree 的 topo 與其 bandwidth,  
-給定傳輸封包的起始點(h1, h3), 終點(h5, h7), 所有節點間皆是有線傳輸,  
+給定傳輸封包的起始點(h1, h3), 終點(h5, h7), 所有節點間皆是有線傳輸,
+h1 傳播路徑: h1→ac1→ag1→core→ag2→ac3→h5,
+h3 傳播路徑: h3→ac2→ag1→core→ag2→ac4→h5,
 其中 ag1->core->ag2 為 bottleneck。    
   
 額外在 ag1->core->ag2 加上一個 wireless link(只有這個 link 是 wireless), 並給定其 bandwidth,  
